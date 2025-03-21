@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/PretendardVariable.woff2') format('woff2');
+    font-display: swap;
+}
+
+@theme {
+    --font-pretendard: 'Pretendard', sans-serif;
+    --font-display: 'Pretendard', sans-serif;
+    --animate-popup: popup 0.3s ease-in-out;
+
+    @keyframes popup {
+        0% {
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+/* 전체 스크롤바 스타일 */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* 스크롤 트랙 (바깥 영역) */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* 밝은 배경 */
+    border: none;
+}
+
+/* 스크롤 썸 (움직이는 바) */
+::-webkit-scrollbar-thumb {
+    background: #212938; /* 어두운 색 */
+    border-radius: 0;
+}
+
+/* 호버 효과 */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
