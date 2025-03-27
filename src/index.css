@@ -5,23 +5,3 @@ body {
     background-color: #f0f0f0;
     box-sizing: border-box;
 }
-
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #999999;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #4a4a4a, #777); /* 그라데이션 효과 */
-    border-radius: 10px;
-    transition: background 0.3s;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #666, #999);
-}

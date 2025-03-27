@@ -169,6 +169,8 @@ export default function App() {
 
     return (
         <div className="font-pretendard">
+            {/* 각 컴포넌트에 className이 많이 선언되어있는게 보이실 겁니다. */}
+            {/* 이는 tailwindCSS라고 하는 클래스작성형 css라이브러리입니다. 지금은 신경 쓰지 않으셔도 무관합니다. */}
             <header className="fixed top-0 bg-gray-800 text-white text-center p-4 w-full">
                 <h1 className="text-2xl font-semibold">Todo List Advanced Project</h1>
             </header>
@@ -235,6 +237,7 @@ export default function App() {
             <footer className="fixed bottom-0 w-full bg-gray-800 text-white text-center p-4">
                 <p>&copy; 2025 OZ Coding School</p>
             </footer>
+            {/* 모달을 제어하는 조건문입니다. useState를 활용해서 구현합니다. */}
             {editModalOpen && (
                 <Modal onClose={handleEditModalClose} onEdit={editTodoAction} currentEdit={currentEdit} />
             )}
